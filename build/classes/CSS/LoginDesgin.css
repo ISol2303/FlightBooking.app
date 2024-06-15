@@ -1,0 +1,95 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 thg 6, 2024, 20:04:50
+    Author     : Tpnam
+*/
+
+/* General styles */
+.Pane {
+    -fx-background-color: #f0f0f0;
+}
+
+.AnchorPane {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+}
+
+/* Left pane styles */
+.leftPane {
+    -fx-background-color:linear-gradient(to bottom right,#272b3f,#256b51);
+}
+
+.planeIcon {
+    -fx-fill: #ffffff;
+}
+
+.appTitle {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 22px;
+    -fx-font-family: 'Tahoma Bold';
+}
+
+/* Right pane styles */
+.rightPane {
+    -fx-background-color: #ffffff;
+}
+
+.loginTitle {
+    -fx-text-fill: #336699;
+    -fx-font-size: 22px;
+    -fx-font-family: 'Tahoma Bold';
+}
+.close{
+    -fx-cursor:hand;
+    -fx-border:none;
+    -fx-border-radius:0%;
+    -fx-background-color:#ffffff;
+}
+.close:hover{
+    -fx-background-color:#ff3547 ;
+}
+
+.usernameField, .passwordField {
+    -fx-border-color: #336699;
+    -fx-border-radius: 4px;
+}
+
+.usernameLabel, .passwordLabel {
+    -fx-text-fill: #333333;
+}
+
+.loginButton {
+    -fx-background-color: linear-gradient(to bottom right,#272b3f,#256b51);
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 4px;
+    -fx-border-color: #336699;
+}
+.loginButton:hover{
+     -fx-background-color: #ffffff;
+     -fx-text-fill: #000000;
+}
+
+.registerButton {
+    -fx-background-color: linear-gradient(to bottom right,#272b3f,#256b51);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #336699;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+}
+.registerButton:hover{
+     -fx-background-color: #ffffff;
+     -fx-text-fill: #000000;
+}
+
+.registerPrompt {
+    -fx-text-fill: #ffffff;
+}
+
+.separator {
+    -fx-background-color: #333;
+    -fx-border-color: #336699;
+}

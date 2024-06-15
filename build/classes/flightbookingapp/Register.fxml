@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="507.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" 
+      fx:controller="flightbookingapp.RegisterController">
+   <children>
+      <AnchorPane prefHeight="507.0" prefWidth="339.0" styleClass="leftPane" stylesheets="@../CSS/LoginDesgin.css">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="PLANE" layoutX="104.0" layoutY="229.0" size="14em" />
+            <Label layoutX="65.0" layoutY="298.0" text="Flight Booking App" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="339.0" prefHeight="507.0" prefWidth="358.0" styleClass="rightPane" stylesheets="@../CSS/LoginDesgin.css">
+         <children>
+            <Label layoutX="142.0" layoutY="83.0" text="Sign Up">
+               <font>
+                  <Font name="Tahoma Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameField" layoutX="55.0" layoutY="152.0" prefHeight="27.0" prefWidth="246.0" promptText="Username" styleClass="usernameField" stylesheets="@../CSS/LoginDesgin.css" />
+            <PasswordField fx:id="passwordField" layoutX="55.0" layoutY="217.0" prefHeight="27.0" prefWidth="246.0" promptText="Password" styleClass="passwordField" stylesheets="@../CSS/LoginDesgin.css" />
+            <Label layoutX="54.0" layoutY="122.0" styleClass="usernameLabel" stylesheets="@../CSS/LoginDesgin.css" text="Username:" />
+            <Label layoutX="55.0" layoutY="192.0" styleClass="passwordLabel" stylesheets="@../CSS/LoginDesgin.css" text="Password:" />
+            <Button fx:id="signUpButton" layoutX="44.0" layoutY="330.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="282.0" stylesheets="@../CSS/LoginDesgin.css" text="SignUp" onAction="#handleSignUp" >
+               <styleClass>
+                  <String fx:value="loginButton" />
+                  <String fx:value="loginTitle" />
+               </styleClass>
+            </Button>
+            <Button fx:id="signInButton" layoutX="178.0" layoutY="446.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="147.0" stylesheets="@../CSS/LoginDesgin.css" text="SignIn" onAction="#handleSignIn" >
+               <styleClass>
+                  <String fx:value="registerPrompt" />
+                  <String fx:value="registerButton" />
+                  <String fx:value="re" />
+               </styleClass>
+            </Button>
+            <Label layoutX="44.0" layoutY="422.0" text="You have an Account?" />
+            <Separator layoutX="44.0" layoutY="398.0" prefHeight="4.0" prefWidth="282.0" stylesheets="@../CSS/LoginDesgin.css" />
+            <Button fx:id="closeButton" layoutX="305.0" layoutY="2.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="38.0" stylesheets="@../CSS/LoginDesgin.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"  onAction="#handleClose">
+               <graphic>
+                  <FontAwesomeIcon glyphName="CLOSE" styleClass="close" text="" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="close" />
+                  <String fx:value="close" />
+               </styleClass>
+            </Button>
+            <Button fx:id="minimizeButton" layoutX="274.0" layoutY="2.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="38.0" stylesheets="@../CSS/LoginDesgin.css" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="0.0" onAction="#handleMinimize">
+               <graphic>
+                  <FontAwesomeIcon fill="#00000075" glyphName="MINUS" styleClass="close" text="" />
+               </graphic>
+               <styleClass>
+                  <String fx:value="close" />
+                  <String fx:value="close" />
+               </styleClass>
+            </Button>
+            <PasswordField fx:id="confirmPasswordField" layoutX="55.0" layoutY="279.0" prefHeight="27.0" prefWidth="246.0" promptText="confirm password" styleClass="passwordField" stylesheets="@../CSS/LoginDesgin.css" />
+            <Label layoutX="55.0" layoutY="254.0" styleClass="passwordLabel" stylesheets="@../CSS/LoginDesgin.css" text="Confirm Password:" />
+            
+            <!-- Error Label for displaying validation errors -->
+            <Label fx:id="errorLabel" layoutX="55.0" layoutY="370.0" text="" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FlightBookingApp.jnlp">
+  <information>
+    <title>FlightBookingApp</title>
+    <vendor>Tpnam</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="FlightBookingApp.jar" size="31736" download="eager" />
+    <jar href="lib\fontawesomefx-8.1.1.jar" size="179827" download="eager" />
+    <jar href="lib\mssql-jdbc-6.4.0.jre8.jar" size="1111548" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="flightbookingapp.Main"  name="FlightBookingApp" />
+  <update check="always"/>
+</jnlp>
